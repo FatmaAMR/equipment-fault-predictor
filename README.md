@@ -10,7 +10,7 @@ A a complete end-to-end system for detecting potential equipment failures using 
 
 - Uvicorn
 
-- Pydantic\
+- Pydantic
 
 - Scikit-learn
 
@@ -44,10 +44,10 @@ Install Miniconda **once** on Windows and create your project environment:
 **1.1. Download and install Miniconda for Windows from [Anacona website](https://docs.anaconda.com/miniconda/install/)**
 
 **1.2. Create the project environment**
-`conda create -n egypt_travel_assistant python=3.8`
+`conda create -n failure-detector python=3.8`
 
 **1.3. Activate the environment**
-`conda activate egypt_travel_assistant`
+`conda activate failure-detector`
 
 
 💡 If you plan to run everything only on Windows, no further installations are required.
@@ -99,8 +99,8 @@ Enter **yes**.
 You now have a separate Miniconda environment inside Ubuntu. Create your project environment as usual:
 
 ```
-conda create -n egypt_travel_assistant python=3.8
-conda activate egypt_travel_assistant
+conda create -n failure-detector python=3.8
+conda activate failure-detector
 ```
 
 **Notes**
