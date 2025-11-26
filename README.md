@@ -10,7 +10,7 @@ A a complete end-to-end system for detecting potential equipment failures using 
 
 - Uvicorn
 
-- Pydantic
+- Pydantic\
 
 - Scikit-learn
 
