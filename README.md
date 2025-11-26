@@ -10,7 +10,7 @@ A a complete end-to-end system for detecting potential equipment failures using 
 
 - Uvicorn
 
-- Pydantic\
+- Pydantic
 
 - Scikit-learn
 
@@ -24,7 +24,7 @@ A a complete end-to-end system for detecting potential equipment failures using 
 
 ### ML
 
-- RandomForestClassifier (Acc: 98%)
+- RandomForestClassifier *(Acc: 98%)*
 
 - IoT sensor [dataset](https://www.kaggle.com/datasets/dnkumars/industrial-equipment-monitoring-dataset) (temp/pressure/vibration/humidity)
 
