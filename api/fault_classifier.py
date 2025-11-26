@@ -22,7 +22,7 @@ def predict(sample:Sample):
             msg='Call for Maintainence ⚠️!'
         propability_of_failure = (model.predict_failure_proba(df)[0])*100
         response = {
-            "Status:":f"{status}",
+            "Status":f"{status}",
             "Probability of failure": f"{propability_of_failure}%",
             "msg":f"{msg}"
         }

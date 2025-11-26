@@ -1,9 +1,7 @@
-# client/ui.py
-
 import streamlit as st
 import requests
 
-st.title("Anomaly/Fault Detector")
+st.title(" Equipment Fault Detector")
 
 st.markdown("Enter the equipment parameters to predict failure:")
 
@@ -29,7 +27,12 @@ if st.button("Predict Failure"):
         response = requests.post("http://127.0.0.1:8000/predict-failure", json=payload)
         if response.status_code == 200:
             result = response.json()
-            st.success(f"Prediction Result: {result}")
+            if result['Status'].lower()=='failed':
+                st.error(f"Status: {result['Status']}")
+                st.error(f"Action: {result['msg']}")
+            else:
+                st.success(f"Status: {result['Status']}")
+                st.success(f"Action: {result['msg']}")
         else:
             st.error(f"Error {response.status_code}: {response.text}")
     except Exception as e:
